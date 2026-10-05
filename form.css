@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+body {
+  background-image: url(back1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+
+   
+}
+.all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+h1{
+    
+    margin-bottom: 1vmax;
+    font-style: italic;
+    text-align: center;
+    color: #FFD700;
+    font-size: 8vmin;
+    margin-top: 0.2vmin;
+
+}
+h3{
+   font-size: 3vmin;
+   margin-bottom: 2vmin;
+}
+.booking{
+    width: 50vmin;
+    display: inline-block;
+    border: 1px solid #FFD700;
+    border-width: 0.1vmin ;
+    
+    box-shadow: 0.5vmin 0.5vmin 1vmin rgba(249, 180, 25, 0.8);
+
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4)), url(formbacj.jpg);
+  
+}
+.name1,.phone1,.date1,.time1,.people1,.requests1{
+    display: block;
+    padding: 1vmax;
+    text-overflow: ellipsis;
+    color: white;
+    font-size: 3vmin;
+}
+input[type="text"], input[type="email"], input[type="date"], input[type="time"], select, textarea {
+    width: 100%;
+    padding: 0.5vmax;
+    border: 0.1vmin solid black;
+    border-radius: 0.2vmax;
+    box-sizing: border-box;
+    font-size: 2vmin;
+    background-color: rgb(15, 10, 6);
+    color: white;
+}
+.b1 button {
+  background-color:#FFD700; 
+  color: #000;                
+  padding: 1.5vmin 2.5vmin;       
+  border: none;               
+  border-radius: 1vmin;          
+  font-size: 2.5vmin;             
+  font-weight: bold;           
+  cursor: pointer;             
+  transition: all 0.3s ease; 
+  box-shadow: 0 0 2vmin rgba(249, 180, 25, 0.7); 
+  width: 90%;                   
+  margin: 2vmin auto;
+  display: block;             
+}
+
+.b1 button:hover {
+  box-shadow: 0 0 3vmin rgba(249, 180, 25, 1); 
+  transform: scale(1.03);      
+}
+.a1 {
+    width: 100%;              
+    display: flex;            
+    justify-content: flex-start; 
+    padding: 1vmin;          
+}
+
+.a1 button {
+    background-color: #FFD700;
+    color: #000;
+    padding: 1vmin 2vmin;
+    border: none;
+    border-radius: 0.5vmin;
+    font-size: 2vmin;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.a1 button:hover {
+    box-shadow: 0 0 2vmin rgba(249, 180, 25, 0.7);
+    transform: scale(1.05);
+}
+#msg {
+    color: white;
+    text-align: center;
+    font-size: 3vmin;
+    font-weight: bold;
+    margin-top: 2.5vmin;
+    margin-bottom: 2.5vmin;
+    padding: 0 1vmin;
+}  

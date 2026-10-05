@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="a1">
+   <a href="index.html"> <button>Back To Homepage</button></a>
+    </div>
+    <div class="all">
+    <header>
+    <h1>Book a Table</h1>
+    <h3>Pick a date and time. We'll hold your table and confirm by phone or email.</h3>
+    </header>
+    <div class="booking" >
+    <form action="form.php" method="post" autocomplete="off">
+        <div class="name1">
+        <div class="n1">
+        <label for="name">Name:</label></div>
+        <div class="n2">
+        <input type="text" id="name" placeholder="Your Name" required>
+        </div>
+    </div>
+        <div class="phone1">
+            <div class="p1">
+         <label for="email">Email:</label>
+        <div class="p2">
+        <input type="email" id="email" placeholder="email" required autocomplete="off">
+        </div>
+    </div>
+    </div>
+     <div class = "date1">
+            <div class="d1">
+        <label for="date">Date:</label></div>
+        <div class="d2">
+       <input type="date" id="date" name="date" required>
+        </div>
+    </div>
+        
+        <div class = "time1">
+            <div class="t1">
+       <label for="time">Select Your Time:</label></div>
+       <div class="t2">
+       <select id="time" name="time" required>
+            <option value="">Select a time</option>
+            <option value="10:00 AM">10:00 AM</option>
+            <option value="11:00 AM">11:00 AM</option>
+            <option value="12:00 PM">12:00 PM</option>
+            <option value="01:00 PM">01:00 PM</option>
+            <option value="02:00 PM">02:00 PM</option>
+            <option value="03:00 PM">03:00 PM</option>
+            <option value="04:00 PM">04:00 PM</option>
+            <option value="05:00 PM">05:00 PM</option>
+        </select>
+       </div>
+        </div>
+        <div class = "people1">
+        <div class = "p11">
+        <label for="people">Number of People:</label></div>
+        <div class=" p21">
+       <select id="people" name="people" required>
+            <option value="">Select number of people</option>
+            <option value="1">1 Guest</option>
+            <option value="2">2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+            <option value="5">5 Guests</option>
+            <option value="6">6 Guests</option>
+            <option value="7">7 Guests</option>
+            <option value="8">8 Guests</option>
+        </select>
+        </div>
+        </div>
+        <div class = "requests1">
+        <label for="terms">I agree to the terms and conditions:</label>
+        <input type="checkbox" id="terms" name="terms" required>
+        </div>
+        <div class="b1">
+         <button type="submit">Reserve Now</button>
+        </div>
+        <p id="msg"></p>
+        </form>
+    </div>
+    </div>
+   <script>
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (event) => {
+        event.preventDefault(); 
+        
+        
+        const name = document.getElementById('name').value;
+        const date = document.getElementById('date').value;
+        const time = document.getElementById('time').value;
+        
+        
+        document.getElementById('msg').textContent = `Your table is booked! Name: ${name}, Date: ${date}, Time: ${time}`;
+        
+        form.reset(); 
+    });
+</script>
+
+        
+
+</body>
+</html>
